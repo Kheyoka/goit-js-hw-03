@@ -1,12 +1,12 @@
 'use strict';
 
-const findBestEmployee = function(emp) {
+const findBestEmployee = function(employees) {
   let maxTasks = 0;
   let name;
-  const keys = Object.keys(emp);
+  const keys = Object.keys(employees);
   for (const key of keys) {
-    if (maxTasks < emp[key]) {
-      maxTasks = emp[key];
+    if (maxTasks < employees[key]) {
+      maxTasks = employees[key];
       name = key;
     }
   }
