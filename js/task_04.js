@@ -1,9 +1,8 @@
 'use strict';
 
 const countTotalSalary = function(employees) {
-  const allSalaries = Object.values(employees);
   let total = 0;
-  for (let salary of allSalaries) {
+  for (let salary of Object.values(employees)) {
     total += salary;
   }
   return `Общая сумма зарплаты работников: ${total}`;

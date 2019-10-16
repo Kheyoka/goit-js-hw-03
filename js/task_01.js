@@ -7,9 +7,9 @@ const user = {
   premium: true,
 };
 
-user['mood'] = 'happy';
-user['hobby'] = 'javascript';
-user['premium'] = false;
+user.mood = 'happy';
+user.hobby = 'javascript';
+user.premium = false;
 
 console.log(user);
 
