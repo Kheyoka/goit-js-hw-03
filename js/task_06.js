@@ -8,14 +8,12 @@ const products = [
 ];
 
 const calculateTotalPrice = function(arr, productName) {
-  let total;
-  for (let key of arr) {
-    if (key.name === productName) {
-      total = key.price * key.quantity;
+  for (let product of arr) {
+    if (product.name === productName) {
+      return `Общая стоимость продукта: ${productName} - ${product.price *
+        product.quantity}`;
     }
   }
-
-  return `Общая стоимость продукта: ${productName} - ${total}`;
 };
 
 console.log(calculateTotalPrice(products, 'Радар')); // 5200
